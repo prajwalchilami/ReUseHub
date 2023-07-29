@@ -20,6 +20,7 @@ else
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <script src="validation.js"></script>
 </head>
 <body>
 
@@ -32,24 +33,21 @@ else
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="Homepage.php">HOME
+          <a class="nav-link active" href="userhomepage.php">Home
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="category.php">CATAGORY</a>
+          <a class="nav-link" href="product_list.php">PRODUCTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="catagory_list.php">CATAGORY LIST</a>
+          <a class="nav-link" href="feedback1.php">FEEDBACK</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="product_sell.php">PRODUCT SELL</a>
         </li>
          <li class="nav-item">
           <a class="nav-link" href="product_list.php">PRODUCT LIST</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="feedback_list.php">FEEDBACK LIST</a>
         </li>
         
       </ul>

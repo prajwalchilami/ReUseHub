@@ -19,7 +19,20 @@ if(isset($_POST['btnsell']))
 
 
  ?>
-
+ <html>
+ <style type="text/css">
+ 	body
+ 	{
+ 		background-image: url(cart.jpeg);
+ 		background-size: cover;
+ 	}
+ 	h3
+ 	{
+ 		color: white;
+ 	}
+ 	
+ </style>
+<body>
 <br>
 <form action="product_sell.php" method="POST">
 	<div class="container">
@@ -72,7 +85,7 @@ if(isset($_POST['btnsell']))
 			<div class="col-sm-6">
 				
 				     <div class="col-sm-4">
-    <input style="color:black;" type="submit" value="submit" name="btnsell" class="form-control">
+    <input style="color:white; background: blue;" type="submit" value="submit" name="btnsell" class="form-control">
 				
 			</div>
 			
@@ -82,5 +95,7 @@ if(isset($_POST['btnsell']))
 
 	</div>
 </form>
+</body>
+</html>
 
 <?php include'Admin_footer.php' ?>

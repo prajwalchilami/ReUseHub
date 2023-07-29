@@ -1,31 +1,14 @@
-<?php include'Admin_header.php';
+<?php include'cust_header.php';
 error_reporting(0);
-if (isset($_POST['btndelete']))
-{
-  $sql="delete from product_sell where id='".$_POST['txt_id']."'";
-  if(mysqli_query($conn,$sql))
-  {
-    echo "<script>alert('Record Deleted')</script>";
-  }
-  else
 
-  {
-    echo "Record Not Deleted";
-  }
-}
-
-if(isset($_POST['btnupdate']))
+if(isset($_POST['btnbuy']))
 {
-  $sql="update product_sell set product_img='".$_POST['txt_pimage']."',product_Deatils='".$_POST['txt_pdetail']."',product_cond='".$_POST['txt_pcond']."',product_price='".$_POST['txt_pprice']."',product_quantity='".$_POST['txt_quant']."' where id='".$_POST['txt_id']."'";
-  if(mysqli_query($conn,$sql))
-  {
-    echo "<script>alert('Record Updated')</script>";
-  }
-  else
-  {
-    echo "Record Not Updated";
-  }
-}
+        header('location:booking.php');
+    }
+   
+
+
+
 
 
 
@@ -37,7 +20,7 @@ if(isset($_POST['btnupdate']))
   <style type="text/css">
   body
   {
-    background-image: url(cart2.jpeg);
+    background-image: url(cart.jpeg);
     background-size: cover;
   }
   h3
@@ -49,7 +32,7 @@ if(isset($_POST['btnupdate']))
 <div class="col-sm-1"></div>
 <div class="col-sm-10">
     <br>
-    <h1 style="color:white;">Product List</h1>
+    <h1>Product List</h1>
     <br>
 <table class="table table-sm">
   <thead>
@@ -87,9 +70,9 @@ while ($row=mysqli_fetch_assoc($sql))
 <td><input type="text" name="txt_quant" value="'.$row['product_quantity'].'" class="form-control"></td>
 
 
-   <td><input type="submit" name="btnupdate" class="btn btn-success" value="Update"></td>
+   <td><input type="submit" name="btnbuy" class="btn btn-success" value="BUY"></td>
 
-     <td> <input type="submit" name="btndelete" class="btn btn-danger" value="Delete"></td>
+    
      </form>
     </tr>';
   }
@@ -102,4 +85,4 @@ while ($row=mysqli_fetch_assoc($sql))
 </div>
 </body>
 </html>
-<?php include'Admin_footer.php'; ?>
+<?php include'cust_footer.php'; ?>

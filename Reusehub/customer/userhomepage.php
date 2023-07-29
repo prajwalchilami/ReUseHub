@@ -1,5 +1,5 @@
 
-<?php include 'Admin_header.php' ?>
+<?php include 'cust_header.php' ?>
 
 <!DOCTYPE html>
 <html>
@@ -46,5 +46,5 @@
 
 </body>
 </html>
-<?php include 'Admin_footer.php' ?>
+<?php include 'cust_footer.php' ?>
 

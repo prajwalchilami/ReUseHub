@@ -27,6 +27,20 @@ if(isset($_POST['btnupdate']))
   }
 }
 ?>
+<html>
+<body>
+  <style type="text/css">
+  body
+  {
+    background-image: url(cart.jpeg);
+    background-size: cover;
+  }
+  h3
+  {
+    color: white;
+  }
+</style>
+
 <div class="row">
 <div class="col-sm-1"></div>
 <div class="col-sm-10">
@@ -85,4 +99,6 @@ while ($row=mysqli_fetch_assoc($sql))
 </div>
 <div class="col-sm-1"></div>
 </div>
+</body>
+</html>
 <?php include'Admin_footer.php'; ?>
